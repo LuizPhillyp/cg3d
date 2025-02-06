@@ -20,7 +20,7 @@ bin:
 clean:
 	rm -rf bin
 
-run: $(TARGET)
+run: clean $(TARGET)
 	./$(TARGET) ./map/arena_teste.svg
 
-.PHONY: all clean
+.PHONY: all clean run
